@@ -37,7 +37,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="terminal" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -69,9 +69,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="843" y="311" key="FileChooserDialogImpl/0.0.1920.1040/1920.78.1600.860@0.0.1920.1040" timestamp="1597340673175" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1597340674675">
+    <state x="461" y="164" key="SettingsEditor" timestamp="1597689757047">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.78.1600.860@0.0.1920.1040" timestamp="1597340674675" />
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/1920.78.1600.860@0.0.1920.1040" timestamp="1597689757047" />
   </component>
 </project>
