@@ -10,15 +10,19 @@
     font-size: 25pt;
     text-decoration: none;
 }
-.content {
+.content-container {
     margin-left: 40px;
     margin-top: 40px;
+
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Tangerine', 'Inconsolata', 'Droid sans', serif;
-    font-size: 20px;
+    /*font-family: 'Tangerine', 'Inconsolata', 'Droid Sans', serif;*/
+    font-family: 'Tinos', serif;
+    font-size: 35px;
 }
+
+
 .date {
     color: grey;
 }
@@ -27,4 +31,11 @@ h1, h2, h3, h4 {
 }
 .post h1 a {
     color: black;
+}
+
+.post-form-blog textarea {
+    width: 100%;
+}
+.post-form-blog .btn-success {
+    float: right;
 }
