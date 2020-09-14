@@ -14,11 +14,15 @@
 <body>
     <div class="page-header">
         <h1><a href="/">AMD BLOG</a></h1> 
+        
+        {% if user.is_authenticated %}
         <div class="new-post-button">
             <a href="post/new"><button class="btn btn-success">Add post</button></a>
         </div>
-        
+        {% endif %}
+
     </div>
+
     <!-- this portion is for the down side of the page-->
     
     <div class="content-container">
