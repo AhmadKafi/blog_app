@@ -39,7 +39,13 @@ h1, h2, h3, h4 {
 .post-form-blog .btn-success {
     float: right;
 }
+.post-draft-button {
+    float: right;
+
+}
 .new-post-button {
     float: right;
-    margin-top: -45px;
+    margin-left: 20px;
+    
 }
+

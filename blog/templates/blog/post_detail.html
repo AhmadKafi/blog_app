@@ -3,21 +3,51 @@
 
 
     <div class="post">
-        
-        
-        {% if post.published_date %}
 
-            <a href="{% url 'post_edit' pk=post.pk %}"><i class="fas fa-edit fa-2x"></i>></a> 
-            <h4>{{ post.author }}</h4>
+        {% if post.published_date %} 
             <div class="date">
                 {{ post.published_date }}
             </div>
-            {% endif %}
+            
+        {% else %}
+        <a href="{% url 'post_publish' pk=post.pk %}" class="btn btn-primary">Publish</a>
 
+        {% endif %}  
+
+       {% if user.is_authenticated %}
+			<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+		{% endif %}
             
             <h1>{{ post.title }}</h1>
             <p>{{ post.text|linebreaksbr }}</p>
-    </div>
 
+    </div>
 {% endblock content %}
 
+
+
+
+<!--<div class="post">
+        {% if post.published_date %} 
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            
+        {% else %}
+        <a href="/" class="btn btn-primary">Publish</a>
+
+        {% endif %}  
+
+        {% if user.is_authenticated %}
+            <a href="{% url 'post_edit' pk=post.pk %}"></a>
+        {% endif %}
+
+
+    
+
+
+
+
+    <h1>{{ post.title }}</h1>
+    </div>
+    -->
