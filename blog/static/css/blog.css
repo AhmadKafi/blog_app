@@ -43,9 +43,10 @@ h1, h2, h3, h4 {
     float: right;
 
 }
-.new-post-button {
+.new-post-button, .login-button {
     float: right;
     margin-left: 20px;
     
 }
+
 

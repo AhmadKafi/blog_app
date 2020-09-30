@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="{% static "css/blog.css" %}">
     <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <title>My blog</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
     <div class="page-header">
@@ -22,8 +22,17 @@
         <div class="post-draft-button">
             <a href="drafts/"><button class="btn btn-success">draft</button></a>
         </div>
-        
+        {% else %}
+            <div class="login-button">
+                <a href="accounts/login"><button class="fas fa-sign-in-alt fa-2x"></button></a>
+            </div>
+
         {% endif %}
+
+        
+
+
+
         <h1><a href="/">AMD BLOG</a></h1>
     </div>
 
