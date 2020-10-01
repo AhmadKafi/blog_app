@@ -39,7 +39,7 @@ h1, h2, h3, h4 {
 .post-form-blog .btn-success {
     float: right;
 }
-.post-draft-button {
+.post-draft-button  {
     float: right;
 
 }
@@ -48,5 +48,10 @@ h1, h2, h3, h4 {
     margin-left: 20px;
     
 }
-
+.top_menu {
+    float: right;
+    color: white;
+    margin-right: 20px;
+    font-size: 26px;
+}
 

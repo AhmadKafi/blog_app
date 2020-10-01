@@ -22,6 +22,10 @@
         <div class="post-draft-button">
             <a href="drafts/"><button class="btn btn-success">draft</button></a>
         </div>
+        <class class="top_menu">
+            <p class="top_menu_name">Hello {{ user.username }} <small>(<a href="{% url 'logout' %}">logout</a>)</small></p>
+
+        </class>
         {% else %}
             <div class="login-button">
                 <a href="accounts/login"><button class="fas fa-sign-in-alt fa-2x"></button></a>
