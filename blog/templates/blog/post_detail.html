@@ -29,6 +29,7 @@
                     {{ comment.created_date }}
                 </div>
             </div>
+                <a href="{% url 'comment_remove' pk=comment.pk %}" ><i class="fas fa-trash-alt"></i></a>
                 <strong>{{ comment.author }}</strong>
                 <p>{{ comment.text }}</p>
 
@@ -41,28 +42,3 @@
 
 
 
-
-<!--<div class="post">
-        {% if post.published_date %} 
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            
-        {% else %}
-        <a href="/" class="btn btn-primary">Publish</a>
-
-        {% endif %}  
-
-        {% if user.is_authenticated %}
-            <a href="{% url 'post_edit' pk=post.pk %}"></a>
-        {% endif %}
-
-
-    
-
-
-
-
-    <h1>{{ post.title }}</h1>
-    </div>
-    -->
