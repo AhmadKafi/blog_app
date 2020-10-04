@@ -18,6 +18,7 @@ def post_detail(request, pk):
     stuff_for_frontend = {'post': post}
     return render(request, 'blog/post_detail.html', stuff_for_frontend)
 
+#this thing is creating new post
 @login_required
 def post_new(request):
     if request.method == 'POST':
@@ -32,6 +33,7 @@ def post_new(request):
         stuff_for_frontend = {'form': form}
     return render(request, 'blog/post_edit.html', stuff_for_frontend)
 
+#this guy is editing the posts
 @login_required
 def post_edit(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -46,6 +48,9 @@ def post_edit(request, pk):
         form = PostForm(instance=post)
     return render(request, 'blog/post_edit.html', {'form': form, 'post': post})
 
+
+
+#he is here for draft lists
 @login_required
 def post_draft_list(request):
     posts = Post.objects.filter(published_date__isnull=True).order_by('-created_date')
@@ -57,6 +62,15 @@ def post_publish(request, pk):
     post = get_object_or_404(Post, pk=pk)
     post.publish()
     return redirect('post_detail', pk=pk)
+
+#this code will delete my posts
+@login_required
+def post_delete(request, pk):
+    post = get_object_or_404(Post, pk=pk)
+    post.delete()
+    return redirect('/')
+
+
 
 @login_required
 def add_comment_to_post(request, pk):
@@ -86,6 +100,7 @@ def comment_approve(request, pk):
     comment = get_object_or_404(Comment, pk=pk)
     comment.approve()
     return redirect('post_detail', pk=comment.post.pk)
+
 
 
 

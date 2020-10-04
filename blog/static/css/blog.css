@@ -58,8 +58,11 @@ h1, h2, h3, h4 {
 .comment {
     margin: 20px 0px 20px 20px;
 }
-.admin {
+.admin  {
     margin-right: 20px;
     margin-top: 8px;
+    float: right;
+}
+.edit {
     float: right;
 }
