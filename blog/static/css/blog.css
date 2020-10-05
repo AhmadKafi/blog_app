@@ -41,12 +41,11 @@ h1, h2, h3, h4 {
 }
 .post-draft-button {
     float: right;
-    margin-right: 20px;
 
 }
-.new-post-button, .login-button{
+.new-post-button, .login-button, .signup {
     float: right;
-    
+    margin-left: 20px;    
 }
 .top_menu {
     float: right;
@@ -66,3 +65,4 @@ h1, h2, h3, h4 {
 .edit {
     float: right;
 }
+
