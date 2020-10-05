@@ -1,13 +1,18 @@
 {% extends 'blog/base.html' %}
 {% block content %}
 
-    <h2>Login page</h2>
-	<form method='post'>
-		{% csrf_token %}
-		{{ form.as_p }}
-	<button type="submit" class="btn btn-primary">Login</button>
-	</form>
-		
+	<div class="panel panel-default" style="width: 400px; margin: 0 auto;">
+
+	
+		<h2>Login page</h2>
+		<form method='post'>
+			{% csrf_token %}
+			{{ form.as_p }}
+		<button type="submit" class="btn btn-primary">Login</button>
+		</form>
+
+		<p>Don't have an account?? <a href="{% url 'signup' %}"> Sign Up here..</a></p>
+	</div>	
 
 {% endblock content %}
 
